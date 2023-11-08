@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: block;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFB3B3;
+    color: white;
+    border: solid #FFB3B3;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color:  #FF9999;
+}
+
+.game-container {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strawberry-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 160px; /* Adjust the width as needed to fit 3 strawberries per row */
+}
+
+.strawberry-container img {
+    width: 40px;
+    height: 40px;
+    margin: 2px; /* Adjust the margin as needed for spacing between strawberries */
+}
+
+button#equal-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #e75b61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button#equal-button:hover {
+    background-color: #c83f49;
+}
+
+.result {
+    font-size: 20px;
+    margin: 20px;
+}
+
+button#try-again-button,
+button#new-game-button {
+    display: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FFB3B3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button#try-again-button:hover,
+button#new-game-button:hover {
+    background-color: #FF9999;
+}
+
+.side.highlight {
+    background-color: #a0e6a0; /* Green background for the correct side */
+    transition: background-color 0.5s;
+}
