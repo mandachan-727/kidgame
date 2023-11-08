@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
         for (let i = 0; i < count; i++) {
             const strawberryIcon = document.createElement("img");
-            strawberryIcon.src = "berri.png"; // Replace with your file path.
+            strawberryIcon.src = "https://mandachan-727.github.io/kidgame/berri.png"; // Replace with your file path.
             container.appendChild(strawberryIcon);
         }
     }
