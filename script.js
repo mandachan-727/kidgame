@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
   function getRandomQuestionType() {
-      return Math.random() < 0.5 ? "more" : "less";
+      return Math.random() < 0.5 ? "more" : "fewer";
   }
   
   function newRound() {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (questionType === "more") {
           result.textContent = "Which side has more strawberries?";
       } else {
-          result.textContent = "Which side has less strawberries?";
+          result.textContent = "Which side has fewer strawberries?";
       }
 
       displayStrawberryIcons("left-icons", leftCount);
